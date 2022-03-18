@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    counter-reset: numbers;
+}
+
+
+
+header{
+    font-family: 'Shrikhand', cursive;
+    text-align: center;
+    box-shadow: 0 0 0.5rem  rgba(0 0 0 / 29%);
+    position: relative;
+    padding: 0.3rem;
+    z-index: 1000;
+}
+main .paris{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #e7e7e7;
+    position: relative;
+    padding: 0.5rem;
+    
+}
+.paris .fas{
+    opacity: 1;
+    -webkit-background-clip: inherit;
+    -webkit-text-fill-color: inherit ;
+    background: inherit;
+}
+.paris h2{
+    font-size: 20px;
+}
+
+/*****EXPLORER*****/
+
+.explorer{
+    background-color: #f6f6f6;
+    padding: 0.5rem;
+    text-align: center;
+}
+.explorer h2{
+    font-size: 29px;
+}
+.explorer p{
+
+}
+
+.explorer button{
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 1rem;
+    font-size: 20px;
+    box-shadow: 0 0 10px 0 #0000002e;
+    background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9) );
+}
+.explorer button:hover{
+    transform: scale(1.03);
+}
+
+/*****FONCTIONNEMENT*****/
+
+.fonctionnement{
+    padding: 1rem;
+}
+.fonctionnement h2{
+    margin: 25px;
+}
+
+.fonctionnement ol{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    cursor: pointer;
+    
+}
+
+.fonctionnement li{
+    position: relative;
+    list-style-type: none;
+    background-color: #f6f6f6;
+    padding: 1.5rem;
+    flex-grow: 1;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 #0000002e;
+}
+.fonctionnement li::before{
+    counter-increment: numbers;
+    content: counter(numbers) "";
+    background-color: #9356DC;
+    padding: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 17px;
+    left: -24px;
+
+}
+
+.fonctionnement li:hover{
+    transform: scale(1.03);
+}
+.fonctionnement li:nth-child(3){
+    background-color: #f2e7fa;
+}
+.fonctionnement li  .fas{
+    margin-right: 10px;
+    
+}
+.fonctionnement .fas{
+    opacity: 1;
+    -webkit-background-clip: inherit;
+    -webkit-text-fill-color: inherit ;
+    background: inherit;
+    color: grey;
+}
+@media (max-width: 819px) {
+    .fonctionnement ol{
+        flex-direction: column;
+    }
+    
+}
+
+/*****MENU*****/
+
+.menu{
+    background-color: #f6f6f6;
+    height: 825px;
+    padding: 13px;
+}
+.restaurant{
+    
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 #0000002e;
+    background-color: white;
+    height: 21rem;
+    width: 49%;
+}
+.restaurant:hover{
+    transform: scale(1.02);
+}
+
+.menu2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem; 
+    height: 725px;
+}
+.menu2 a{
+    text-decoration: none;
+    color: inherit;
+}
+.nouveau{
+    position: relative;
+    
+}
+.nouveau::before{
+    content: "Nouveau";
+    position: absolute;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    width: 80px;
+    height: 25px;
+    right: 10px;
+    top: 10px;
+    background-color: #99E2D0;
+    color:#3fc0a0;
+    
+}
+img{
+    width: 100%;
+    object-fit: cover;
+    height: 228px;
+    border-radius: 15px 15px 0 0;
+}
+.img-description{
+    margin: 10px;
+    position: relative;
+}
+.img-description i{
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 0;
+}
+
+@media (min-width:320px) and (max-width: 768px){
+    .restaurant{
+        width: 100%;
+    }
+    .menu{
+        height: 1515px;
+    }
+}
+@media (min-width: 724px) and (max-width: 826px){
+
+.restaurant{
+    width: 48%;
+}
+.menu{
+    height: inherit;
+}
+}
+
+/*****HEART*****/
+
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    z-index: 3;
+}
+.container i{
+    top: -50px;
+}
+.fas{
+    opacity: 0;
+    background: -webkit-gradient(linear, left top, left bottom,from(#9356DC), to(#FF79DA));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fas:hover{
+    opacity: 1;
+}
+
+/*****FOOTER*****/
+
+footer{
+    background-color: #353535;
+    padding: 1rem;
+}
+
+footer h2{
+    font-family: 'Shrikhand', cursive;
+    color: white;
+}
+footer p{
+    color: white;
+    width: fit-content;
+    cursor: pointer;
+}
+footer p a{
+    color: white;
+    text-decoration: none;
+}
+footer p:hover{
+    border-bottom: 1px solid white;
+}
+footer .fas{
+   opacity: 1;
+   -webkit-background-clip: inherit;
+   -webkit-text-fill-color: inherit ;
+   background: inherit;
+}
+
+
+
+
+

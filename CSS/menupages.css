@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    font-family: 'Shrikhand', cursive;
+    text-align: center;
+    box-shadow: 0 0 0.5rem  rgba(0 0 0 / 29%);
+    position: relative;
+    padding: 0.3rem;
+    z-index: 1000;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+    height: 238px;
+}
+
+/**MENU**/
+
+.menu_container{
+    background-color: #f6f6f6;
+    overflow: hidden;
+    position: relative;
+    border-radius: 35px;
+    top: -30px;
+
+}
+.title{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    align-items: center;
+    overflow: hidden;
+}
+.title h2{
+    font-family: 'Shrikhand', cursive;
+    font-size: 30px;
+}
+.title i{
+    margin-right: 30px;
+    width: 3rem;
+}
+.menu{
+    display: grid;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+.menu_entree{
+    border-bottom: 5px solid #99e2d0;
+    width: 10%;
+    text-transform: uppercase;
+
+}
+.menuitem{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 #0000002e;
+    padding: 1rem;
+ 
+}
+.price{
+    margin-left: auto;
+    font-weight: 800;
+}
+
+.menuitem:hover .icon{
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+.menuitem:hover i{
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+}
+.menu_description{
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+.icon{
+    width: 7rem;
+    background: #99E2D0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+
+
+
+
+button{
+    width: 50%;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 1rem;
+    font-size: 20px;
+    box-shadow: 0 0 10px 0 #0000002e;
+    background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9) );
+}
+
+/**FOOTER**/
+
+footer{
+    background-color: #353535;
+    padding: 1rem;
+}
+
+footer h2{
+    font-family: 'Shrikhand', cursive;
+    color: white;
+}
+footer p{
+    color: white;
+    width: fit-content;
+}
+footer p a{
+    color: white;
+    text-decoration: none;
+}
+footer p:hover{
+    border-bottom: 1px solid white;
+}
