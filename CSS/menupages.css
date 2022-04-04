@@ -114,9 +114,6 @@ div>i{
     animation: appear .6s;
     animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
     animation-fill-mode: both;
-    transform: scale(0);
-  
-
 }
 .menuitem:hover{
     transform: scale(1.02);
@@ -196,6 +193,36 @@ button:hover{
     100%{
         transform: scale(1);
     }
+}
+.delay1{
+    animation-delay: 0s;
+}
+.delay2{
+    animation-delay: 100ms;
+}
+.delay3{
+    animation-delay: 200ms;
+}
+.delay4{
+    animation-delay: 300ms;
+}
+.delay5{
+    animation-delay: 400ms;
+}
+.delay6{
+    animation-delay: 500ms;
+}
+.delay7{
+    animation-delay: 600ms;
+}
+.delay8{
+    animation-delay: 700ms;
+}
+.delay9{
+    animation-delay: 800ms;
+}
+.delay10{
+    animation-delay: 900ms;
 }
 
 
