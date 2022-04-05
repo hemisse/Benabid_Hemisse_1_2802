@@ -10,6 +10,8 @@ body{
     counter-reset: numbers;
 }
 
+/*****LOADING_SPINNER*****/
+
 .loader{
     position: fixed;
     width: 100%;
@@ -76,7 +78,6 @@ body{
         z-index: -1;
     }
 }
-
 
 
 header{
