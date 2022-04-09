@@ -80,8 +80,11 @@ div>i{
 
     .menu{
         grid-template-columns: repeat(3,1fr);
+    
     }
     .menu_container{
+        display: grid;
+        justify-content: center;
         height: inherit;
     }
     button{
@@ -115,7 +118,6 @@ div>i{
 .submenu{
     display: grid;
     grid-gap: 1rem;
-    
 }
 .menu_entree{
     border-bottom: 5px solid #99e2d0;

@@ -179,7 +179,6 @@ main .paris{
     justify-content: center;
     top: 17px;
     left: -24px;
-
 }
 
 .fonctionnement li:hover{
@@ -251,8 +250,7 @@ main .paris{
     right: 10px;
     top: 10px;
     background-color: #99E2D0;
-    color:#3fc0a0;
-    
+    color:#3fc0a0; 
 }
 img{
     width: 100%;
