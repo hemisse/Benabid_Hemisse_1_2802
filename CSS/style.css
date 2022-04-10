@@ -286,6 +286,15 @@ img{
     height: inherit;
 }
 }
+@media (min-width: 1024px){
+    .menu{
+        display: grid;
+        justify-content: center;
+    }
+    .fonctionnement ol{
+        
+    }
+}
 
 /*****HEART*****/
 
