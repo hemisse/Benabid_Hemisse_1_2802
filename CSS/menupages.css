@@ -69,8 +69,11 @@ div>i{
     overflow: hidden;
     position: relative;
     border-radius: 35px 35px 0 0;
-    top: -42px;
-    height: 1280px;
+    top: -35px;
+    height: 1300px;
+}
+.height{
+    height: 1390px;
 }
 @media (min-width:1024px){
 
@@ -87,7 +90,10 @@ div>i{
         width: 90%;
     }
     .menu_container{
-        height: inherit;
+        height: 655px;
+    }
+    .height{
+        height: 725px;
     }
     button{
         margin-bottom: 30px;
@@ -106,7 +112,7 @@ div>i{
 .title h2{
     font-family: 'Shrikhand', cursive;
     font-size: 25px;
-    margin-left: 10px;
+    margin-left: 25px;
     width: 100%;
 }
 .title i{
@@ -218,7 +224,8 @@ button{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    position: relative;
+    top: 40px;
 }
 button:hover{
     transform: scale(1.02);
